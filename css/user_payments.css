@@ -1,0 +1,62 @@
+.main-content {
+    flex: 1;
+    padding: 35px;
+    background: #f3f4f6;
+}
+
+/* PAGE TITLE */
+.main-content h1 {
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+/* TABLE */
+table {
+    background: white;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+table th {
+    background: #334155;
+    color: white;
+    padding: 14px;
+    font-size: 14px;
+    text-align: center;
+}
+
+table td {
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* STATUS COLORS */
+.status.success { color:#16a34a; }
+.status.pending { color:#f59e0b; }
+.status.failed  { color:#dc2626; }
+
+.btn-download{
+    background:#2563eb;
+    color:white;
+    padding:6px 12px;
+    border-radius:5px;
+    text-decoration:none;
+    font-size:13px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+}

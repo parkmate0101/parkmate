@@ -1,0 +1,217 @@
+/* ================== RESET ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f2f3f5;
+  color: #222;
+}
+
+/* ================== LAYOUT ================== */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+/* ===== PAGE HEADER ===== */
+.page-header h1 {
+  margin-bottom: 5px;
+}
+
+.page-header p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+/* ===== SIDEBAR ===== */
+.admin-sidebar {
+  width: 240px;
+  background: #5149F6;
+  color: white;
+  padding: 20px;
+}
+
+.admin-logo {
+  margin-bottom: 30px;
+  padding:10px;
+}
+.admin-text {
+	padding:10px;
+}
+
+.admin-nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+.admin-nav a.active,
+.admin-nav a:hover {
+  background: #334155;
+}
+
+/* ================== MAIN CONTENT ================== */
+.admin-content {
+  flex: 1;
+  padding: 30px 40px;
+  background-color: #f8f9fb;
+}
+
+/* ================== PAGE HEADER ================== */
+.page-header {
+  margin-bottom: 25px;
+}
+
+.page-header h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* ================== DASHBOARD CARDS ================== */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.dashboard-card {
+  height: 130px;
+  border-radius: 16px;
+  padding: 22px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dashboard-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.dashboard-card h2 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+/* Card Colors (MATCH IMAGE) */
+.dashboard-card.orange {
+  background: #e48b3c;
+}
+
+.dashboard-card.light-orange {
+  background: #f3a65f;
+}
+
+.dashboard-card.red {
+  background: #e1644f;
+}
+
+/* ================== FILTER BAR ================== */
+.filter-bar,
+.add-slot {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-bar input,
+.filter-bar select,
+.add-slot input,
+.add-slot select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* ================== BUTTONS ================== */
+.btn {
+  padding: 10px 18px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+/* ================== TABLE ================== */
+.table-container {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  background: #f1f3f5;
+  text-align: left;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.admin-table td {
+  padding: 14px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* ================== BADGES ================== */
+.badge {
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: white;
+  display: inline-block;
+}
+
+.badge.active {
+  background-color: #16a34a;
+}
+
+.badge.completed {
+  background-color: #2563eb;
+}
+
+.badge.cancelled {
+  background-color: #dc2626;
+}
+@media (max-width: 768px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+
+  .admin-sidebar {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .admin-nav a {
+    display: inline-block;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 480px) {
+  .dashboard-card h2 { font-size: 24px; }
+}

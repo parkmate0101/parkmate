@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.confirmation-container {
+    background-color: #fff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.confirmation-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.booking-details p {
+   font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.booking-details strong {
+    color: #555;
+}
+
+
+button#confirmBtn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+a {
+	color:inherit;
+	text-decoration:none;
+}
+button#confirmBtn:hover {
+    background-color: #218838;
+}

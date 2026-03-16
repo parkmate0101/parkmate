@@ -1,0 +1,84 @@
+.main-content h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+	margin-left:20px;
+	 background: #f3f4f6;
+}
+
+.table-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	overflow: auto;
+}
+.main {
+    flex: 1;
+    padding: 35px;
+    background: #f3f4f6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px; /* optional */
+}
+
+thead {
+    background-color: #f5f7fa;
+}
+
+th, td {
+    padding: 12px 14px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    font-weight: 600;
+    color: #333;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background-color: #f9fafc;
+}
+
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+/* Status badges */
+.status {
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.status.booked {
+    color: #0a58ca;
+    background: #e7f1ff;
+}
+
+.status.cancelled {
+    color: #b02a37;
+    background: #fde2e2;
+}
+
+.status.completed {
+    color: #146c43;
+    background: #d1e7dd;
+}
+
+/* Active sidebar link */
+.sidebar ul li.active a {
+    background-color: #0a58ca;
+    color: #fff;
+    border-radius: 6px;
+}
