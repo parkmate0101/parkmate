@@ -1,0 +1,20 @@
+# Hide environment secrets
+.env
+env.php
+
+# Hide database credentials
+db_connect.php
+
+# Hide mail configuration
+mail-config.php
+
+# Ignore logs
+*.log
+
+# Ignore dependency folders
+/vendor
+/node_modules
+
+# OS files
+.DS_Store
+Thumbs.db
